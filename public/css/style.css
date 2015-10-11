@@ -1,20 +1,17 @@
 
 html,body{
     height: 100%;
-background-color: #111;
+    background-color: #fff;
+    color: #444;
 }
 body{
 
 }
 h1 {
-    background-image: url(/img/Codeology.png);
+    background-image: url(/img/logo.png);
     background-size: cover;
     width: 200px;
     height: 300px;
-    top: 50%;
-    left:50%;
-    position:absolute;
-    margin-left:-100px;
-    margin-top: -150px;
-    text-indent: -2000px;
+  padding-top:205px;
+    font-size:16px
 }
