@@ -9,9 +9,13 @@ body{
 }
 h1 {
     background-image: url(/img/logo.png);
-    background-size: cover;
+
     width: 200px;
     height: 300px;
   padding-top:205px;
-    font-size:16px
+    font-size:16px;
+    text-align:center;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
 }
