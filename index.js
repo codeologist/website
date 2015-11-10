@@ -3,7 +3,7 @@
     var express = require('express');
     var app = express();
     var bodyParser = require('body-parser');
-
+    var postmark = require("postmark");
     app.set('views', './public/tmpl');
     app.set('view engine', 'jade');
     app.engine('jade', require('jade').__express);
@@ -13,14 +13,31 @@
     app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 
+    // Example request
+    var client = new postmark.Client("748dc303-0e25-4fee-95d0-7643d1bb286c");
+
+
+
     app.get('/', function(req, res){
         res.render("homepage")
     });
 
 
     app.post('/api/contact', function(req, res){
-        console.log(">x>x>x>x>", req.body)
-        res.json( req.query );
+
+
+        var email = {
+            "From": "inquirys@codeology.co.nz",
+            "To": "codeology451@gmail.com",
+            "Subject": req.body["form-subject"],
+            "TextBody": req.body["form-message"]
+        };
+
+        client.sendEmail(email);
+
+
+            res.json( email );
+
     });
 
 
