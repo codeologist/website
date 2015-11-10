@@ -13,9 +13,8 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "~4.8.7",
     "jade": "^1.7.0"
   }
 }
-
-

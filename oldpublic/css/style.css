@@ -1,0 +1,22 @@
+
+html,body{
+    height: 100%;
+    background-color: #fff;
+    color: #444;
+}
+body{
+
+}
+h1 {
+    background-image: url(/img/logo.png);
+
+    width: 200px;
+    height: 15px;
+  padding-top:200px;
+    font-size:16px;
+    text-align:center;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-repeat:no-repeat;
+}
