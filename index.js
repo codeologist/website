@@ -25,23 +25,20 @@
 
     app.post('/api/contact', function(req, res){
 
-
         var email = {
             "From": "inquirys@codeology.co.nz",
             "To": "codeology451@gmail.com",
-            "Subject": req.body["form-subject"],
-            "TextBody": req.body["form-message"]
+            "Subject": req.body["subject"],
+            "TextBody": req.body["message"]
         };
 
         client.sendEmail(email);
 
-
-            res.json( email );
+        res.json(email);
 
     });
 
 
     app.listen(process.env.PORT || 3000, function(){
-            console.log( "start", process.pid, process.env.PORT || 3000, process.uptime() );
-
+        console.log("start", process.pid, process.env.PORT || 3000, process.uptime());
     });
