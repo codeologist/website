@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem;
+    height: 100%;
+    border: 3px solid red;
+}
+
+body:before {
+    content: "EXPERIMENTAL";
+    color: rgba(255, 0, 0, .2);
+    position: absolute;
+    font-family: arial;
+    top: 40%;
+    left: 20%;
+    font-size: 5rem;
+    transform: rotate(45deg);
+}

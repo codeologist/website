@@ -18,6 +18,7 @@
     "express-mailer": "^0.3.0",
     "jade": "^1.7.0",
     "postmark": "^1.2.1",
-    "twitter-rss-noauth": "0.2.3"
+    "twitter-rss-noauth": "0.2.3",
+    "xml2js": "0.4.15"
   }
 }

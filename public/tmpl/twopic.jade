@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        title twopic - lab
+        link(rel="stylesheet", type="text/css",  href="twopic.css")
+
+    body
+
+        h1 Twopic Thunder
+        ul
+            each val in results.text
+                li=val
+
+        ul
+            each val in results.link
+                li=val
