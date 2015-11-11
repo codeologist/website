@@ -38,6 +38,8 @@
 
     });
 
+    app.get('/lab/twopic', require("../lab/twopic"));
+
 
     app.listen(process.env.PORT || 3000, function(){
         console.log("start", process.pid, process.env.PORT || 3000, process.uptime());

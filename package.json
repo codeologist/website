@@ -17,6 +17,7 @@
     "express": "~4.8.7",
     "express-mailer": "^0.3.0",
     "jade": "^1.7.0",
-    "postmark": "^1.2.1"
+    "postmark": "^1.2.1",
+    "twitter-rss-noauth": "0.2.3"
   }
 }
