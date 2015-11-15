@@ -37,14 +37,14 @@
         res.json(email);
 
     });
-
-    app.get('/lab/twopic', require("./lab/twopic"));
-
-
-    app.post('/api/nlp/tokenize/sentences', require("./api/nlp/tokenizeSentences"));
-    app.get('/api', function( req, res ){
-        res.render("api");
-    });
+    //
+    //app.get('/lab/twopic', require("./lab/twopic"));
+    //
+    //
+    //app.post('/api/nlp/tokenize/sentences', require("./api/nlp/tokenizeSentences"));
+    //app.get('/api', function( req, res ){
+    //    res.render("api");
+    //});
 
 
 
