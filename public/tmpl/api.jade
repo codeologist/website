@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    head
+        title codeology api
+        link(rel="stylesheet", type="text/css",  href="twopic.css")
+
+    body
+
+        h1 codeology api
+        form(method="post",action="/api/nlp/tokenize/sentences")
+            label Paragraph
+            textarea(name=text)
+            button submit
